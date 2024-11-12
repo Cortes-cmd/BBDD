@@ -5,7 +5,7 @@ SELECT * FROM CLIENTE WHERE CIUDAD = 'Madrid';
 SELECT * FROM CLIENTE WHERE CIUDAD != 'Madrid';
 
 -- 3. Información de todos los clientes cuyo nombre comience con una de las letras entre B y G:
-SELECT * FROM CLIENTE WHERE NOMBRE BETWEEN "B" and "G";
+SELECT * FROM CLIENTE WHERE NOMBRE BETWEEN "B" and "Gz";
 
 -- 4. Información de todos los clientes cuyo nombre comience con la letra D:
 SELECT * FROM CLIENTE WHERE NOMBRE LIKE 'R%';
