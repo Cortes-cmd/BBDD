@@ -41,4 +41,14 @@ on n.idAlumno = a.idalumno
 inner join asignatura g
 on n.idAsignatura = g.idasignatura;
 
-select * from nota
+select * from nota;
+
+select CalcularTotalPedido(10800);
+
+select ClasificarStock(1);
+
+select DiasTranscurridos("2019-04-30") as DiasTranscurridos;
+
+select VentasPorCategoria(3);
+
+select TotalDescuentoCliente ("TOMSP");
