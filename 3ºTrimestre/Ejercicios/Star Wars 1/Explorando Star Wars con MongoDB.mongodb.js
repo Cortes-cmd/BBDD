@@ -2,7 +2,7 @@
 use('cine');
 
 // Insert a few documents into the sales collection.
-db.cine.insertMany([
+db.peliculas.insertMany([
   {
     "titulo": "Star Wars: Episodio IV - Una nueva esperanza",
     "episodio": 4,
