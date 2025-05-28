@@ -1,3 +1,105 @@
 #peliculas{
     background-color: rgb(197, 195, 43);
 }
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.BF{
+padding: 6%;
+width: 50%;
+
+}
+
+header, main, footer {
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn1{
+    background-color: #ffd700;
+    border: none;
+    padding: 1%;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1%;
+    margin: 8%;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+}
+
+.btn2 {
+    background-color: #ffd700;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+
+}
+
+.vista2, .vista3 {
+    display: none;
+}
+
+#datos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+
+.tarjeta1 {
+    border: 1px solid #4cac20;
+    padding: 1%;
+    margin: 1rem auto;
+    width: 10%;
+    background-color: #111;
+}
+
+.tarjeta2 {
+    border: 1px solid #444;
+    padding: 1%;
+    margin: 1rem auto;
+     width: 10%;
+    background-color: #111;
+}
+
+.tarjeta3 {
+    border: 1px solid #444;
+    padding: 1%;
+    margin: 1rem auto;
+    width: 10%;
+    background-color: #111;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, select, textarea, button {
+    padding: 0.5rem;
+    width: 100%;
+}

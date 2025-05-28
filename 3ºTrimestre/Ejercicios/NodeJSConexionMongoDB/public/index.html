@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Cine</title>
-  <link rel="stylesheet" href="estilo.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explora la Galaxia de Star Wars</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Películas de Star Wars</h1>
-  <div id="peliculas"></div>
-  <script src="script.js"></script>
+ 
+    <!-- Vista 1 -->
+    <section class="vista1">
+      <h1>En una Galaxia muy, muy lejana...</h1>
+      <p> <b>Un portal donde el conocimiento galáctico cobra vida.</b><br> </p> 
+      <p> <b>Aquí podrás descubrir personajes legendarios, naves emblemáticas y mundos lejanos del universo de Star Wars.</b> <br></p>  
+      <p> <b> ¡Empieza tu viaje!</b></p>
+      <img class="BF" src="imgs/boba-fett.jpg" alt="Boba Fett image" >
+      <br>
+      <button class="btn1" onclick="mostrarVista(2)">Explorar</button>
+    </section>
+
+    <!-- Vista 2 -->
+    <section class="vista2">
+      <h1>Base de Datos Galáctica</h1>
+      <label>Filtrar por nombre: <input type="text" id="filtro" onkeyup="filtrar()"></label>
+        <div id="datos">
+          <div class="tarjeta1">
+            <h3>Luke Skywalker</h3>
+            <p>Planeta: Tatooine</p>
+            <p>Tipo: Humano</p>
+          </div>
+          <div class="tarjeta2">
+            <h3>Darth Vader</h3>
+            <p>Planeta: Tatooine</p>
+            <p>Tipo: Sith</p>
+          </div>
+          <div class="tarjeta3">
+            <h3>Millennium Falcon</h3>
+            <p>Tipo: Nave</p>
+          </div>
+        </div>
+
+      <button class="btn2" onclick="mostrarVista(3)">Deja tu reseña</button>
+    </section>
+
+    <!-- Vista 3 -->
+    <section class="vista3">
+      <h1>Deja tu Reseña</h1>
+      <form>
+        <label>Nombre:</label>
+        <input type="text" name="nombre">
+
+        <label>Elemento comentado:</label>
+        <input type="text" name="elemento">
+
+        <label>Valoración:</label>
+        <select name="valoracion">
+          <option>⭐</option>
+          <option>⭐⭐</option>
+          <option>⭐⭐⭐</option>
+          <option>⭐⭐⭐⭐</option>
+          <option>⭐⭐⭐⭐⭐</option>
+        </select>
+
+        <label>Comentario:</label>
+        <textarea name="comentario"></textarea>
+
+        <button type="button">Enviar</button>
+      </form>
+    </section>
+<script src="script.js"></script>
+
 </body>
 </html>
